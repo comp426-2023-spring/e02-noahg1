@@ -1,12 +1,81 @@
+
 <html>
     <head>
-        <title>Rock</title>
+        <title>Rock, Paper, Scissors</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
+        <link href="./styles.css" rel="stylesheet">
+		<script src="./scripts.js"></script>
     </head>
-    <body>
+    <body onload="onLoad()">
 
-    <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
+            <h2>Select Game type:</h2>
+            <input type="radio" id="rps" value="rps" name="game" onclick="rps()">
+            <label for="rps">RPS</label>
+
+            <input type="radio" id="rpsls" value="rpsls" name="game" onclick="rpsls()">
+            <label for="rpsls">RPSLS</label>
+
+            <h2>Select Opponent:</h2>
+            <input type="radio" id="comp" value="comp" name="comp" onclick="comp()">
+            <label for="comp">Computer</label>
+
+            <input type="radio" id="p2" value="p2" name="comp" onclick="player()">
+            <label for="p2">Player 2</label>
+
+            <h2>Select Throw:</h2>
+
+            <input type="radio" id="rock" value="rock" name="throw">
+            <label for="rock">Rock</label>
+
+            <input type="radio" id="paper" value="paper" name="throw">
+            <label for="paper">Paper</label>
+
+            <input type="radio" id="scissors" value="scissors" name="throw">
+            <label for="scissors">Scissors</label>
+
+            <div name="rpsls">
+                <input type="radio" id="lizard" value="lizard" name="throw">
+                <label for="lizard" >Lizard</label>
+
+                <input type="radio" id="spock" value="spock" name="throw">
+                <label for="spock" >Spock</label>
+            </div>
+
+            <div name="player2">
+                <h2>Player 2 Throw:</h2>
+                <input type="radio" id="rock" value="rock" name="throw2">
+                <label for="rock">Rock</label>
+
+                <input type="radio" id="paper" value="paper" name="throw2">
+                <label for="paper">Paper</label>
+
+                <input type="radio" id="scissors" value="scissors" name="throw2">
+                <label for="scissors">Scissors</label>
+
+                <div name="rpsls">
+                    <input type="radio" id="lizard" value="lizard" name="throw2">
+                    <label for="lizard" >Lizard</label>
+
+                    <input type="radio" id="spock" value="spock" name="throw2">
+                    <label for="spock" >Spock</label>
+                </div>
+
+            </div>
+            
+            
+
+        <button onclick="play()">Play</button>
+
+
+        
+        <!-- <h2>Select your Move:</h2>
+        <select id="player1">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">scissors</option>
+            <option value="lizard" id="lizard">Lizard</option>
+            <option value="lizard" id="spock">spock</option>
+        </select> -->
 
     </body>
 </html>
