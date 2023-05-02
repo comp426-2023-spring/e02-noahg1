@@ -6,65 +6,77 @@
         <link href="./styles.css" rel="stylesheet">
 		<script src="./scripts.js"></script>
     </head>
-    <body onload="onLoad()">
+    <body class="body" onload="onLoad()">
 
-            <h2>Select Game type:</h2>
-            <input type="radio" id="rps" value="rps" name="game" onclick="rps()">
-            <label for="rps">RPS</label>
+        <h2>Select Game type:</h2>
+        <input class="radio" type="radio" id="rps" value="rps" name="game" checked="checked" onclick="rps()">
+        <label for="rps">RPS</label>
 
-            <input type="radio" id="rpsls" value="rpsls" name="game" onclick="rpsls()">
-            <label for="rpsls">RPSLS</label>
+        <input class="radio" type="radio" id="rpsls" value="rpsls" name="game" onclick="rpsls()">
+        <label for="rpsls">RPSLS</label>
 
-            <h2>Select Opponent:</h2>
-            <input type="radio" id="comp" value="comp" name="comp" onclick="comp()">
-            <label for="comp">Computer</label>
+        <h2>Check to play an Opponent:</h2>
+        <input class="radio" type="checkbox" id="comp" value="comp" name="comp" onclick="comp()">
+        <label for="comp">Opponent</label>
 
-            <input type="radio" id="p2" value="p2" name="comp" onclick="player()">
-            <label for="p2">Player 2</label>
 
+        
+
+        <div name="shots">
             <h2>Select Throw:</h2>
-
-            <input type="radio" id="rock" value="rock" name="throw">
+            <input class="radio" type="radio" id="rock" value="rock" name="throw">
             <label for="rock">Rock</label>
 
-            <input type="radio" id="paper" value="paper" name="throw">
+            <input class="radio" type="radio" id="paper" value="paper" name="throw">
             <label for="paper">Paper</label>
 
-            <input type="radio" id="scissors" value="scissors" name="throw">
+            <input class="radio" type="radio" id="scissors" value="scissors" name="throw">
             <label for="scissors">Scissors</label>
 
             <div name="rpsls">
-                <input type="radio" id="lizard" value="lizard" name="throw">
+                <input class="radio" type="radio" id="lizard" value="lizard" name="throw">
                 <label for="lizard" >Lizard</label>
 
-                <input type="radio" id="spock" value="spock" name="throw">
+                <input class="radio" type="radio" id="spock" value="spock" name="throw">
                 <label for="spock" >Spock</label>
             </div>
 
-            <div name="player2">
-                <h2>Player 2 Throw:</h2>
-                <input type="radio" id="rock" value="rock" name="throw2">
-                <label for="rock">Rock</label>
+        </div>
 
-                <input type="radio" id="paper" value="paper" name="throw2">
-                <label for="paper">Paper</label>
+        
+        
 
-                <input type="radio" id="scissors" value="scissors" name="throw2">
-                <label for="scissors">Scissors</label>
-
-                <div name="rpsls">
-                    <input type="radio" id="lizard" value="lizard" name="throw2">
-                    <label for="lizard" >Lizard</label>
-
-                    <input type="radio" id="spock" value="spock" name="throw2">
-                    <label for="spock" >Spock</label>
-                </div>
-
-            </div>
             
+        <br></br>
+
+     
             
+
 
         <button onclick="play()">Play</button>
+
+        <button onclick="rules()">Rules</button>
+
+        <button onclick="reset()">Reset</button>
+
+        <br></br>
+
+        <div>
+            <h4 id="results">Results</h4>
+            <table class="results">
+                <tr>
+                    <td>
+                        <h3 id="shotImgLab">You:</h3>
+                        <img src="img/rock.jpg" id="shotImg" class="shot"> 
+                    </td>
+                    <td>
+                        <h3 id="oppShotImgLab">Opponent:</h3>
+                        <img src="img/rock.jpg" id="oppShotImg" class="shot"> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
 
 
         

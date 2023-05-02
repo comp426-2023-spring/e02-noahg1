@@ -1,8 +1,45 @@
-body {
+html {
+    text-align: center;
+    
 }
 
-h1 {
+.results{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
+button{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-size: 200% auto;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    transition: 0.5s;
+}
+
+button:hover {
+    background-position: right center;
+}
+
+.radio{
+    accent-color: #553c9a;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+label {
+    font-size: px;
+    font-weight: 200;
 }
