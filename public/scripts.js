@@ -39,7 +39,14 @@ function reset(){
 }
 
 function rules(){
-    window.alert(`Rules:
+    window.alert(`
+    RPS Rules:
+    Scissors CUTS Paper
+    Paper COVERS Rock
+    Rock SMOOSHES Lizard
+    
+    
+    RPSLS Rules:
     Scissors CUTS Paper
     Paper COVERS Rock
     Rock SMOOSHES Lizard

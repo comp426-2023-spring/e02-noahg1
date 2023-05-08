@@ -1,5 +1,5 @@
 
-<html>
+<html lang="en">
     <head>
         <title>Rock, Paper, Scissors</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
@@ -9,7 +9,7 @@
     <body class="body" onload="onLoad()">
 
         <h2>Select Game type:</h2>
-        <input class="radio" type="radio" id="rps" value="rps" name="game" checked="checked" onclick="rps()">
+        <input class="radio" type="radio" id="rps" value="rps" name="game" checked onclick="rps()">
         <label for="rps">RPS</label>
 
         <input class="radio" type="radio" id="rpsls" value="rpsls" name="game" onclick="rpsls()">
@@ -20,7 +20,7 @@
         <label for="comp">Opponent</label>
 
 
-        
+
 
         <div name="shots">
             <h2>Select Throw:</h2>
@@ -43,51 +43,39 @@
 
         </div>
 
-        
-        
-
-            
-        <br></br>
-
-     
-            
 
 
-        <button onclick="play()">Play</button>
 
-        <button onclick="rules()">Rules</button>
 
-        <button onclick="reset()">Reset</button>
+        <br><br>
 
-        <br></br>
+
+  
+
+
+        <button type="button" onclick="play()">Play</button>
+
+        <button type="button" onclick="rules()">Rules</button>
+
+        <button type="button" onclick="reset()">Reset</button>
+
+        <br><br>
 
         <div>
             <h4 id="results">Results</h4>
             <table class="results">
-                <tr>
+                <tbody>
                     <td>
                         <h3 id="shotImgLab">You:</h3>
-                        <img src="img/rock.jpg" id="shotImg" class="shot"> 
+                        <img alt="" src="img/rock.jpg" id="shotImg" class="shot">
                     </td>
                     <td>
                         <h3 id="oppShotImgLab">Opponent:</h3>
-                        <img src="img/rock.jpg" id="oppShotImg" class="shot"> 
+                        <img alt="" src="img/rock.jpg" id="oppShotImg" class="shot">
                     </td>
-                </tr>
+                </tbody>
             </table>
         </div>
-        
-
-
-        
-        <!-- <h2>Select your Move:</h2>
-        <select id="player1">
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">scissors</option>
-            <option value="lizard" id="lizard">Lizard</option>
-            <option value="lizard" id="spock">spock</option>
-        </select> -->
 
     </body>
 </html>
